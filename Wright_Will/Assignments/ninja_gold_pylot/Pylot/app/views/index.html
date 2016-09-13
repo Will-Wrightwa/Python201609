@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja Gold</title>
+        <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h4>Your Gold:   {{gold}}</h4>
+            <div class="locations">
+                {% for key in locations %}
+                <form class="location" action="/process_money" method="post">
+                    <h2>{{key}}</h4>
+                    <h4>(earns {{locations[key][0]}}-{{locations[key][1]}} gold)</h6>
+                    <input type="hidden" name="location" value={{key}}>
+                    <input  type="submit" name="name" value="Find Gold!">
+                </form>
+                {% endfor %}
+            </div>
+            <h6>activities</h6>
+            {% for each in log%}
+                {{each  | safe }}
+            {% endfor %}
+        </div>
+    </body>
+</html>
