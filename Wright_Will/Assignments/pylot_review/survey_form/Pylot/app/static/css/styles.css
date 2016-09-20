@@ -1,0 +1,16 @@
+* {
+  font-family: monaco;
+}
+
+.box{
+    border: solid black 1px;
+    padding:5px;
+    width:400px;
+}
+
+.left{
+    width:45%
+}
+.right{
+    width:45%
+}

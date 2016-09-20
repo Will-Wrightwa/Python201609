@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ninja Gold</title>
+        <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="success">
+                <p>
+                    thanks for submitting! You have submitted this form {{session['user']['count']}} times now...
+                </p>
+            </div>
+            <div class="result box">
+                <h4 >submitted Information:</h4>
+                <h4 class="left">name:</h4>
+                <h4 class="right">{{session['user']['name']}}</h4>
+                <h4 class="left">location:</h4>
+                <h4 class="right">{{session['user']['location']}}</h4>
+                <h4 class="left">language:</h4>
+                <h4 class="right">{{session['user']['language']}}</h4>
+                <h4 class="left">comment:</h4>
+                <h4 class="right">{{session['user']['comment']}}</h4>
+
+                <a href="/">Go Back</a>
+
+
+            </div>
+        </div>
+    </body>
+</html>
