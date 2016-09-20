@@ -9,7 +9,7 @@ class rand_word(Controller):
         self.db = self._app.db
 
     def index(self):
-        if not count in session:
+        if not "count" in session:
             session['count'] = 0
         session['count'] += 1
         word = ""
