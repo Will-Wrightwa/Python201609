@@ -1,1 +1,18 @@
 
+.box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid gray 1px;
+    margin-top: 25px;
+}
+.box *{
+    text-align: center;
+}
+.little{
+    width:200px;
+}
+.big{
+    width: 50%;
+
+}

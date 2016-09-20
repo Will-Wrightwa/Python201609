@@ -7,5 +7,7 @@ class times(Controller):
         self.db = self._app.db
 
     def index(self):
-
-        return self.load_view('index.html')
+        day = strftime("%b %d, %Y")
+        print day
+        time = strftime("%I:%m %p")
+        return self.load_view('index.html',day=day,time=time)
