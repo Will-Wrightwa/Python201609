@@ -4,6 +4,8 @@ from system.core.router import routes
 
 routes['default_controller'] = 'survey'
 routes['POST']['/survey/process'] = 'survey#process'
+routes['GET']['/survey/success'] = 'survey#success'
+
 """
 
 

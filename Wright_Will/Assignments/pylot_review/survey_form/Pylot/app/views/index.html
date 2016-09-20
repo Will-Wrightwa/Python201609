@@ -12,19 +12,19 @@
                 <h4>your name:</h4>
                 <input type="text" name="name" value="">
                 <h4>Dojo Location:</h4>
-                <select class="" name="">
-                    (% for city in cities %)
+                <select class="" name="location">
+                    {% for city in cities %}
                     <option value="option">{{city}}</option>
                     {% endfor %}
                 </select>
                 <h4>Favortie Language:</h4>
-                <select class="" name="">
+                <select class="" name="language">
                     {% for language in languages %}
                     <option value="option">{{language}}</option>
                     {% endfor %}
                 </select>
                 <h4>comment</h4>
-                <textarea name="name" rows="8" cols="40"></textarea>
+                <textarea name="comment" rows="8" cols="40"></textarea>
                 <input type="submit" name="submit">
             </form>
         </div>
